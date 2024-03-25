@@ -823,7 +823,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-
+/* 
 .bg-\[url\(\'\.\/assets\/header\.webp\'\)\] {
   background-image: url('../public/assets/header.webp');
 }
@@ -845,7 +845,7 @@ video {
 }
 
 .bg-\[url\(\'\.\/assets\/products\/iphone\.jpg\'\)\] {
-  background-image: url('../public/assets/products/iphone.jpg');
+  background-image: url('/assets/products/iphone.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/products\/macbook-pro\.png\'\)\] {
@@ -858,7 +858,7 @@ video {
 
 .bg-\[url\(\'\.\/assets\/products\/perfume\.jpg\'\)\] {
   background-image: url('../public/assets/products/perfume.jpg');
-}
+} */
 
 .bg-cover {
   background-size: cover;
