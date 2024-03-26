@@ -36,9 +36,9 @@ const ProductDetails = ({ params }) => {
 
                             <div>
                                 <p className="my-3">
-                                    <span className="line-through text-rose-600 opacity-60">${product?.price}</span>
+                                    <span className="line-through text-rose-600 opacity-60">${product_details?.price}</span>
                                     <span className="text-2xl font-bold">
-                                    ${product?.price - (product?.price * (product?.discountPercentage / 100))}
+                                    ${product_details?.price - (product_details?.price * (product_details?.discountPercentage / 100))}
                                     </span>
                                 </p>
                             </div>
