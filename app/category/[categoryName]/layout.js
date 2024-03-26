@@ -10,11 +10,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body >
-
                 <Image width={500} height={500} src={'/assets/header.webp'} alt="header" className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full" />
-
                 {children}
-
             </body>
         </html>
     );

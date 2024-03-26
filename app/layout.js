@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
               className="hidden lg:block w-[18px] h-[18px]"
             />
 
-            <Image src={'/assets/svg/shopping-Cart.svg'} width={20} height={20} classsName="block w-5 h-5" alt="shopping cart icon" />
+            <Image src={'/assets/svg/shopping-Cart.svg'} width={20} height={20} className="block w-5 h-5" alt="shopping cart icon" />
           </div>
         </nav>
 
