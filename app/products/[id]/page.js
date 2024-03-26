@@ -3,8 +3,6 @@ import Image from "next/image";
 
 const ProductDetails = ({ params }) => {
 
-    console.log("params", params?.id)
-
     const product_details = productsData?.products?.find((product) => product?.id === parseInt(params?.id));
 
     console.log("product_details", product_details)
