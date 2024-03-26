@@ -42,7 +42,7 @@ const Category = ({ params }) => {
                                                 </span>
                                             </h2>
                                             <p className="text-[#919090] text-sm ">{product?.description}</p>
-                                            <p className="mt-4 text-sm text-rose-600"><span className="text-[#919090] line-through">$205.00</span> $195.00</p>
+                                            <p className="mt-4 text-sm text-rose-600"><span className="text-[#919090] line-through">$205.00</span> ${product?.price}</p>
                                         </div>
                                     ))
                                 }

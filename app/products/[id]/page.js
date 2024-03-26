@@ -5,8 +5,6 @@ const ProductDetails = ({ params }) => {
 
     const product_details = productsData?.products?.find((product) => product?.id === parseInt(params?.id));
 
-    console.log("product_details", product_details)
-
     return (
         <div>
             <main className="h-screen">
@@ -38,8 +36,10 @@ const ProductDetails = ({ params }) => {
 
                             <div>
                                 <p className="my-3">
-                                    <span className="line-through text-rose-600 opacity-60">$205.00</span>
-                                    <span className="text-2xl font-bold">$195.00</span>
+                                    <span className="line-through text-rose-600 opacity-60">${product?.price}</span>
+                                    <span className="text-2xl font-bold">
+                                    ${product?.price - (product?.price * (product?.discountPercentage / 100))}
+                                    </span>
                                 </p>
                             </div>
                             <div>
@@ -48,7 +48,7 @@ const ProductDetails = ({ params }) => {
                                 </p>
 
                                 <button className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] text-center py-3 mt-5 text-white rounded-full">
-                                    Add To Cart - $195
+                                    Add To Cart - ${product?.price - (product?.price * (product?.discountPercentage / 100))}
                                 </button>
                             </div>
                         </div>
