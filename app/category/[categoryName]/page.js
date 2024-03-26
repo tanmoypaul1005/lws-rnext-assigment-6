@@ -9,8 +9,6 @@ const Category = ({ params }) => {
 
     const all_category = ["all", "smartphones", "laptops", "fragrances", "skincare", "groceries"]
 
-
-
     return (
         <div>
             <main>
@@ -37,7 +35,7 @@ const Category = ({ params }) => {
                                 {
                                     product_list?.map((product, index) => (
                                         <div key={index}>
-                                            <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[#f8f8f8]  bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
+                                            <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[&quot;#f8f8f8&quot;]  bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
                                             <h2 className="mt-2 text-sm lg:text-base">
                                                 <a className="text-base font-bold" href="./productPage.html">
                                                     {product?.title}
@@ -57,22 +55,6 @@ const Category = ({ params }) => {
                             <div className="flex items-center justify-center">No products</div>
                     }
 
-                </section>
-
-                <section className="bg-[#ced3ca] py-5 lg:py-16">
-                    <div className="w-10/12 mx-auto lg:w-4/12">
-                        <h1 className="my-5 font-serif text-xl italic text-center lg:text-3xl">Get the inside scoop</h1>
-                        <p className="text-sm text-center lg:text-base">
-                            Sign up for new product drops, behind-the-scenes content, and monthly "5 Things I'm Digging" emails
-                        </p>
-                        <form action="#" className="mb-5">
-                            <input type="text" className="w-full p-3 mt-10 border border-black focus:outline-none"
-                                placeholder="Enter your email" />
-                            <button className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] text-center py-2 mt-2 text-white">
-                                See what we're doing
-                            </button>
-                        </form>
-                    </div>
                 </section>
             </main>
         </div>
