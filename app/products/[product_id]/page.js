@@ -24,7 +24,7 @@ const ProductDetails = ({ params }) => {
                             </div>
                         </div>
                         <div className="w-full lg:w-5/12">
-                            <h1 className="font-serif text-xl italic font-semibold lg:text-3xl">iPhone 9</h1>
+                            <h1 className="font-serif text-xl italic font-semibold lg:text-3xl">{product_details?.title}</h1>
                             <span className="text-[#919090] my-3">Smartphone</span>
                             <div className="flex items-center justify-start gap-1 mt-3">
                                 <img src="./assets/svg/star.svg" width="20px" alt="" />
@@ -43,10 +43,7 @@ const ProductDetails = ({ params }) => {
                             </div>
                             <div>
                                 <p className="leading-7">
-                                    Enhance your dining space with this sleek, contemporary dining table, crafted from high-quality solid
-                                    wood with a warm finish. Its sturdy construction and minimalist design make it a perfect addition for
-                                    any home looking for a touch of elegance. Accommodates up to six guests comfortably and includes a
-                                    striking fruit bowl centerpiece. The overhead lighting is not included.
+                                    {product_details?.description}
                                 </p>
 
                                 <button className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] text-center py-3 mt-5 text-white rounded-full">
