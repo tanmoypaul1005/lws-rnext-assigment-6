@@ -1,6 +1,7 @@
 import Image from "next/image";
 import productsData from '../data/product.json';
 import Link from 'next/link'
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
 
@@ -27,25 +28,12 @@ export default function Home() {
 
         <main>
           <section className="w-11/12 py-10 mx-auto lg:w-10/12 max-w-7xl">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 my-4 lg:my-10">
-            {
-              productsData?.products?.map((product, index) => (
-                <div key={index}>
-                <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-[270px] h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
-                <h2 class="text-sm lg:text-base mt-2">
-                  <Link class="text-base font-bold" href={`/products/${product?.id}`}>
-                    {product?.title}
-                  </Link>
-                  <span class="text-[#919090]">
-                    <a href="./category.html">({product?.category})</a>
-                  </span>
-                </h2>
-                <p class="text-[#919090] text-sm ">{product?.description}</p>
-      
-                <p class="text-rose-600 text-sm mt-4"><span class="text-[#919090] line-through">$205.00</span> $195.00</p>
-              </div>
-              ))
-            }
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 my-4 lg:my-10">
+              {
+                productsData?.products?.map((product, index) => (
+                  <ProductCard key={product?.id} product={product} />
+                ))
+              }
             </div>
           </section>
 
@@ -74,4 +62,4 @@ export default function Home() {
 }
 
 
-{/* <Image width={270} height={270} src={"/assets/products/iphone.jpg"} alt="" className="relative delay-150 w-180px lg:w-[270px] h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" /> */}
+{/* <Image width={270} height={270} src={"/assets/products/iphone.jpg"} alt="" className="relative delay-150 w-180px lg:w-[270px] h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" /> */ }
