@@ -1,17 +1,11 @@
-import Image from "next/image";
 import productsData from '../data/product.json';
-import Link from 'next/link'
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
 
-  // console.log("productsData", productsData)
-
   return (
     <>
-
       <body>
-
         <header
           className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full"
           style={{ backgroundImage: "url('/assets/header.webp')" }}
