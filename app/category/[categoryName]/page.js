@@ -7,17 +7,24 @@ const Category = ({ params }) => {
 
     console.log("product_list", product_list)
 
+    const all_category = ["all", "smartphones", "laptops", "fragrances", "skincare", "groceries"]
+
     return (
         <div>
             <main>
                 <section className="items-start justify-between w-11/12 py-0 mx-auto lg:w-10/12 max-w-7xl lg:py-10 lg:flex">
                     <div className="flex items-center justify-between w-full my-10 lg:block lg:w-2/12 lg:my-0 lg:mt-4">
-                        <button className="box-border block h-6 mt-4 border-black hover:border-b">All</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Smartphones</button>
+                        {
+                            all_category?.map((category, index) => (
+                                <button key={index} className={`${category === params?.categoryName ? "border-b" : ""} capitalize box-border block h-6 mt-4 border-black hover:border-b`}>{category}</button>
+                            ))
+                        }
+
+                        {/* <button className="box-border block h-6 mt-5 border-black hover:border-b">Smartphones</button>
                         <button className="box-border block h-6 mt-5 border-black hover:border-b">Laptops</button>
                         <button className="box-border block h-6 mt-5 border-black hover:border-b">Fragrances</button>
                         <button className="box-border block h-6 mt-5 border-black hover:border-b">Skincare</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Groceries</button>
+                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Groceries</button> */}
                     </div>
                     <div className="sticky top-0 right-0 grid w-full grid-cols-2 gap-4 my-4 lg:w-10/12 lg:grid-cols-3 lg:my-10">
 
