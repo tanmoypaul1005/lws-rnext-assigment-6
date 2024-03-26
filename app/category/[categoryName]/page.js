@@ -19,12 +19,6 @@ const Category = ({ params }) => {
                                 <button key={index} className={`${category === params?.categoryName ? "border-b" : ""} capitalize box-border block h-6 mt-4 border-black hover:border-b`}>{category}</button>
                             ))
                         }
-
-                        {/* <button className="box-border block h-6 mt-5 border-black hover:border-b">Smartphones</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Laptops</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Fragrances</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Skincare</button>
-                        <button className="box-border block h-6 mt-5 border-black hover:border-b">Groceries</button> */}
                     </div>
                     <div className="sticky top-0 right-0 grid w-full grid-cols-2 gap-4 my-4 lg:w-10/12 lg:grid-cols-3 lg:my-10">
 
