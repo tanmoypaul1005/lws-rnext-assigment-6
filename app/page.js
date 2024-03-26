@@ -43,13 +43,13 @@ export default function Home() {
             <div className="w-10/12 mx-auto lg:w-4/12">
               <h1 className="my-5 font-serif text-xl italic text-center lg:text-3xl">Get the inside scoop</h1>
               <p className="text-sm text-center lg:text-base">
-                Sign up for new product drops, behind-the-scenes content, and monthly "5 Things I'm Digging" emails
+                Sign up for new product drops, behind-the-scenes content, and monthly 5 Things Im Diggin emails
               </p>
               <form action="#" className="mb-5">
                 <input type="text" className="w-full p-3 mt-10 border border-black focus:outline-none"
                   placeholder="Enter your email" />
                 <button className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] text-center py-2 mt-2 text-white">
-                  See what we're doing
+                  See what wre doing
                 </button>
               </form>
             </div>
@@ -62,4 +62,3 @@ export default function Home() {
 }
 
 
-{/* <Image width={270} height={270} src={"/assets/products/iphone.jpg"} alt="" className="relative delay-150 w-180px lg:w-[270px] h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" /> */ }
