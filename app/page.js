@@ -13,7 +13,7 @@ export default function Home() {
       <body>
 
         <header
-          classNameName="h-[500px] bg-center flex flex-col-reverse bg-cover w-full"
+          className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full"
           style={{ backgroundImage: "url('/assets/header.webp')" }}
         >
           <div className="w-10/12 mx-auto mb-5 text-white max-w-7xl">

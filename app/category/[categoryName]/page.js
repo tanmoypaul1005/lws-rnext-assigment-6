@@ -5,8 +5,6 @@ const Category = ({ params }) => {
 
     const product_list = productsData?.products?.filter((product) => product?.category === params?.categoryName);
 
-    console.log("product_list", product_list)
-
     const all_category = ["all", "smartphones", "laptops", "fragrances", "skincare", "groceries"]
 
     return (
@@ -25,7 +23,7 @@ const Category = ({ params }) => {
                         {
                             product_list?.map((product, index) => (
                                 <div key={index}>
-                                    <Image width={180} height={270} src={product?.thumbnail} alt="" classNameName="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[#f8f8f8]  bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
+                                    <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[#f8f8f8]  bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
                                     <h2 className="mt-2 text-sm lg:text-base">
                                         <a className="text-base font-bold" href="./productPage.html">
                                             {product?.title}
