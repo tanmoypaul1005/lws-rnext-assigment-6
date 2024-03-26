@@ -216,7 +216,82 @@
           "https://cdn.dummyjson.com/product-images/12/4.jpg",
           "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg"
         ]
-      }
+      },
+      {
+        "id": 16,
+        "title": "Hyaluronic Acid Serum",
+        "description": "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+        "price": 19,
+        "discountPercentage": 13.31,
+        "rating": 4.83,
+        "stock": 110,
+        "brand": "L'Oreal Paris",
+        "category": "skincare",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/16/thumbnail.jpg",
+        "images": [
+          "https://cdn.dummyjson.com/product-images/16/1.png",
+          "https://cdn.dummyjson.com/product-images/16/2.webp",
+          "https://cdn.dummyjson.com/product-images/16/3.jpg",
+          "https://cdn.dummyjson.com/product-images/16/4.jpg",
+          "https://cdn.dummyjson.com/product-images/16/thumbnail.jpg"
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Tree Oil 30ml",
+        "description": "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,",
+        "price": 12,
+        "discountPercentage": 4.09,
+        "rating": 4.52,
+        "stock": 78,
+        "brand": "Hemani Tea",
+        "category": "skincare",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg",
+        "images": [
+          "https://cdn.dummyjson.com/product-images/17/1.jpg",
+          "https://cdn.dummyjson.com/product-images/17/2.jpg",
+          "https://cdn.dummyjson.com/product-images/17/3.jpg",
+          "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg"
+        ]
+      }  ,
+      {
+        "id": 24,
+        "title": "cereals muesli fruit nuts",
+        "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+        "price": 46,
+        "discountPercentage": 16.8,
+        "rating": 4.94,
+        "stock": 113,
+        "brand": "fauji",
+        "category": "groceries",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/24/thumbnail.jpg",
+        "images": [
+          "https://cdn.dummyjson.com/product-images/24/1.jpg",
+          "https://cdn.dummyjson.com/product-images/24/2.jpg",
+          "https://cdn.dummyjson.com/product-images/24/3.jpg",
+          "https://cdn.dummyjson.com/product-images/24/4.jpg",
+          "https://cdn.dummyjson.com/product-images/24/thumbnail.jpg"
+        ]
+      },
+      {
+        "id": 25,
+        "title": "Gulab Powder 50 Gram",
+        "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
+        "price": 70,
+        "discountPercentage": 13.58,
+        "rating": 4.87,
+        "stock": 47,
+        "brand": "Dry Rose",
+        "category": "groceries",
+        "thumbnail": "https://cdn.dummyjson.com/product-images/25/thumbnail.jpg",
+        "images": [
+          "https://cdn.dummyjson.com/product-images/25/1.png",
+          "https://cdn.dummyjson.com/product-images/25/2.jpg",
+          "https://cdn.dummyjson.com/product-images/25/3.png",
+          "https://cdn.dummyjson.com/product-images/25/4.jpg",
+          "https://cdn.dummyjson.com/product-images/25/thumbnail.jpg"
+        ]
+      }  
     ]
 }
   
