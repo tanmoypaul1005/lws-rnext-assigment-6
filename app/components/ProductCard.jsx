@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
 
             <p className="mt-4 text-sm text-rose-600">
                 <sspan className="text-[#919090] line-through">${product?.price}</sspan>
-                ${product?.price - (product?.price * (product?.discountPercentage / 100))}
+                ${parseInt(product?.price - (product?.price * (product?.discountPercentage / 100)))}
             </p>
         </div>
     )

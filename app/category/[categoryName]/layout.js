@@ -10,11 +10,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body >
-                <Image width={500} height={500} src={'/assets/header.webp'} alt="header" className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full" />
-                
+                {/* <Image width={500} height={500} src={'/assets/header.webp'} alt="header" className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full" /> */}
+
                 {children}
 
-                <section className="bg-[#ced3ca] py-5 lg:py-16">
+                {/* <section className="bg-[#ced3ca] py-5 lg:py-16">
                     <div className="w-10/12 mx-auto lg:w-4/12">
                         <h1 className="my-5 font-serif text-xl italic text-center lg:text-3xl">Get the inside scoop</h1>
                         <p className="text-sm text-center lg:text-base">
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                             </button>
                         </form>
                     </div>
-                </section>
+                </section> */}
             </body>
         </html>
     );

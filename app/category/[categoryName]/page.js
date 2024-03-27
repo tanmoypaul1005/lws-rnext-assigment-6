@@ -2,9 +2,9 @@ import Image from "next/image";
 import productsData from '../../../data/product.json';
 import Link from 'next/link';
 
-const Category = ({ params }) => {
+const CategoryList = ({ params }) => {
 
-    const product_list = productsData?.products?.filter((product) => product?.category === params?.categoryName);
+    const product_list = params?.categoryName === 'all' ? productsData?.products : productsData?.products?.filter((product) => product?.category === params?.categoryName);
 
     const all_category = ["all", "smartphones", "laptops", "fragrances", "skincare", "groceries"];
 
@@ -32,7 +32,7 @@ const Category = ({ params }) => {
                                 {
                                     product_list?.map((product, index) => (
                                         <div key={index}>
-                                            <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-&quot;#f8f8f8&quot; bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
+                                            <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
                                             <h2 className="mt-2 text-sm lg:text-base">
                                                 <a className="text-base font-bold" href="./productPage.html">
                                                     {product?.title}
@@ -42,7 +42,10 @@ const Category = ({ params }) => {
                                                 </span>
                                             </h2>
                                             <p className="text-[#919090] text-sm ">{product?.description}</p>
-                                            <p className="mt-4 text-sm text-rose-600"><span className="text-[#919090] line-through">$205.00</span> ${product?.price}</p>
+                                            <p className="mt-4 text-sm text-rose-600">
+                                                <span className="text-[#919090] line-through">${product?.price}</span>
+                                                ${parseInt(product?.price - (product?.price * (product?.discountPercentage / 100)))}
+                                            </p>
                                         </div>
                                     ))
                                 }
@@ -56,4 +59,4 @@ const Category = ({ params }) => {
     )
 }
 
-export default Category;
+export default CategoryList;

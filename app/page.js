@@ -8,8 +8,7 @@ export default function Home() {
       <body>
         <header
           className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full"
-          style={{ backgroundImage: "url('/assets/header.webp')" }}
-        >
+          style={{ backgroundImage: "url('/assets/header.webp')" }}>
           <div className="w-10/12 mx-auto mb-5 text-white max-w-7xl">
             <h1 className="font-serif text-2xl lg:text-3xl">Introducing LWS Shop Center</h1>
             <p>Your whole week at a glance</p>
@@ -22,7 +21,7 @@ export default function Home() {
 
         <main>
           <section className="w-11/12 py-10 mx-auto lg:w-10/12 max-w-7xl">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 my-4 lg:my-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 my-4 lg:my-10">
               {
                 productsData?.products?.map((product, index) => (
                   <ProductCard key={product?.id} product={product} />
