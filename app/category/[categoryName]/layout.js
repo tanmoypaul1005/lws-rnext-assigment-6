@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Footer from "./components/Footer";
 
 export const metadata = {
     title: "Learn with Sumit",
