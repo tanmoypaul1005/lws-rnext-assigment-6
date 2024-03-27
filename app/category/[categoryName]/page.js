@@ -35,7 +35,8 @@ const CategoryList = ({ params }) => {
                                             <Image width={180} height={270} src={product?.thumbnail} alt="" className="relative delay-150 w-180px lg:w-full h-[205px] lg:h-[310px] bg-[#f8f8f8] bg-cover bg-center transition-all duration-3000 ease-in-out transform" />
                                             <h2 className="mt-2 text-sm lg:text-base">
                                                 <a className="text-base font-bold" href="./productPage.html">
-                                                    {product?.title}
+
+                                                    <Link href={`/products/${product?.id}`}>                                                    {product?.title}</Link>
                                                 </a>
                                                 <span className="text-[#919090]">
                                                     <Link href={`/category/${product?.category}`}>({product?.category})</Link>
