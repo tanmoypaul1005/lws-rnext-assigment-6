@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
               {/* <a href="./index.html">
                 <img src="./assets/lws-logo-black.svg" className="h-10" alt="" />
               </a> */}
+              <Image style={{maxHeight:"30px" ,maxWidth:"100px", minHeight:"30px", minWidth:"100px"}} src={"/assets/lws-logo-black.svg"} alt="" className="h-10" width={0} height={0} />
             </div>
           </div>
           <div className="flex items-center justify-end gap-2 lg:gap-5 lg:w-4/12">
