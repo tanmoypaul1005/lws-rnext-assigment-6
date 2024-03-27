@@ -10,6 +10,7 @@ const CategoryList = ({ params }) => {
 
     return (
         <div>
+                        <Image width={500} height={500} src={'/assets/header.webp'} alt="header" className="h-[500px] bg-center flex flex-col-reverse bg-cover w-full" />
             <main>
                 <section className="items-start justify-between w-11/12 py-0 mx-auto lg:w-10/12 max-w-7xl lg:py-10 lg:flex">
                     <div className="flex items-center justify-between w-full my-10 lg:block lg:w-2/12 lg:my-0 lg:mt-4">
